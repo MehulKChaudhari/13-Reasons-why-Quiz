@@ -53,4 +53,43 @@ for (var i=0; i<questions.length; i++){
   letssee(currentQuestion.question, currentQuestion.answer)
 }
 
+if (score => 2){
+  
+    console.log(chalk.black.bgCyan.bold("Welcome to level One"));
+    var questions = [{
+    question: `what was Last Name of hannah?
+      a: Jensen
+    b: Foley
+    c: Baker \n`,
+    answer: "c"
+  }, {
+    question: `Who was mechanic?
+    a: Alex
+    b: Tony
+    c:justine \n
+    `,
+    answer:"b"
+  }, {
+    question:` Who had guns?
+    a: Hannah
+    b:Mr.porter
+    c:Tyler \n`,
+    answer:"c"
+  }];
+
+  for (var i=0; i<questions.length; i++){
+    var currentQuestion = questions[i];
+    letssee(currentQuestion.question, currentQuestion.answer)
+  }
+
+}else if(score==1){
+  console.log("Nice 🙂");
+}else{
+  console.log(" Better luck next time");
+}
+
+
 console.log(chalk.red.bgWhite.bold.italic.underline("You have SCORED:", score));
+if (score == 6){
+  console.logO(chalk.black.bgYellow.bold.underline("Congratulations, you have scored maximum points!"));
+};
